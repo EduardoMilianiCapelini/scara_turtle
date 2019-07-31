@@ -1,0 +1,2 @@
+scara_cpe_4students/scara_cpe_apps:scara_cpe_4students/scara_cpe_description:scara_cpe_4students/scara_cpe_gazebo:scara_cpe_4students/scara_cpe_ik_moveit_plugin:scara_cpe_4students/scara_cpe_kinemaics:scara_cpe_4students/scara_cpe_moveit
+-DCATKIN_DEVEL_PREFIX=/home/tp/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/tp/catkin_ws/install -G Unix Makefiles

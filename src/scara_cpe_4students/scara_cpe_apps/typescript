@@ -1,0 +1,175 @@
+Le script a débuté sur mer. 14 nov. 2018 09:33:57 CET
+thomas.sevede@tpme05:~/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps$ cd sc ript
+thomas.sevede@tpme05:~/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script$$ ls
+moveit_test_named_target_new.py  moveit_test_path.py	   moveit_test_poses.py
+moveit_test_named_target.py	 moveit_test_poses_new.py
+thomas.sevede@tpme05:~/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script$$ rosrun sxa[K[Kcara_cpe_apps moveit_test_poses_new.py
+  File "/fs03/share/users/thomas.sevede/home/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script/moveit_test_poses_new.py", line 29
+    def moveit_to_point(self,x,y)
+                                ^
+SyntaxError: invalid syntax
+thomas.sevede@tpme05:~/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script$$ rosrun scara_cpe_apps moveit_test_poses_new.py
+  File "/fs03/share/users/thomas.sevede/home/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script/moveit_test_poses_new.py", line 29
+    def moveit_to_point(self,x,y)
+                                ^
+SyntaxError: invalid syntax
+thomas.sevede@tpme05:~/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script$$ rosrun scara_cpe_apps moveit_test_poses_new.py
+[31m[ERROR] [1542184535.372511930]: Unable to parse joint value '-0,4'[0m
+[31m[ERROR] [1542184535.372551522]: Unable to parse joint value ('-0,4') for joint 'shoulder_1_joint' in group state 'right'[0m
+[31m[ERROR] [1542184535.372570911]: Unable to parse joint value '0,4'[0m
+[31m[ERROR] [1542184535.372583064]: Unable to parse joint value ('0,4') for joint 'shoulder_2_joint' in group state 'right'[0m
+[0m[ INFO] [1542184535.372625533]: Loading robot model 'scara_cpe'...[0m
+[0m[ INFO] [1542184535.372644573]: No root/virtual joint specified in SRDF. Assuming fixed joint[0m
+[31m[ERROR] [1542184535.495260388]: Unable to parse joint value '-0,4'[0m
+[31m[ERROR] [1542184535.495285636]: Unable to parse joint value ('-0,4') for joint 'shoulder_1_joint' in group state 'right'[0m
+[31m[ERROR] [1542184535.495302549]: Unable to parse joint value '0,4'[0m
+[31m[ERROR] [1542184535.495312276]: Unable to parse joint value ('0,4') for joint 'shoulder_2_joint' in group state 'right'[0m
+[0m[ INFO] [1542184535.495345541]: Loading robot model 'scara_cpe'...[0m
+[0m[ INFO] [1542184535.495358476]: No root/virtual joint specified in SRDF. Assuming fixed joint[0m
+[0m[ INFO] [1542184536.756271586]: TrajectoryExecution will use new action capability.[0m
+[0m[ INFO] [1542184536.756311780]: Ready to take MoveGroup commands for group scara_cpe_group.[0m
+Traceback (most recent call last):
+  File "/fs03/share/users/thomas.sevede/home/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script/moveit_test_poses_new.py", line 41, in <module>
+    scara.moveit_to_point(self,0.5,0.3)
+NameError: name 'self' is not defined
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::lock_error> >'
+  what():  boost: mutex lock failed in pthread_mutex_lock: Invalid argument
+Abandon
+thomas.sevede@tpme05:~/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script$$ rosrun scara_cpe_apps moveit_test_poses_new.py
+[31m[ERROR] [1542184551.946238136]: Unable to parse joint value '-0,4'[0m
+[31m[ERROR] [1542184551.946268087]: Unable to parse joint value ('-0,4') for joint 'shoulder_1_joint' in group state 'right'[0m
+[31m[ERROR] [1542184551.946291666]: Unable to parse joint value '0,4'[0m
+[31m[ERROR] [1542184551.946309382]: Unable to parse joint value ('0,4') for joint 'shoulder_2_joint' in group state 'right'[0m
+[0m[ INFO] [1542184551.946357733]: Loading robot model 'scara_cpe'...[0m
+[0m[ INFO] [1542184551.946378185]: No root/virtual joint specified in SRDF. Assuming fixed joint[0m
+[31m[ERROR] [1542184552.069862106]: Unable to parse joint value '-0,4'[0m
+[31m[ERROR] [1542184552.069886277]: Unable to parse joint value ('-0,4') for joint 'shoulder_1_joint' in group state 'right'[0m
+[31m[ERROR] [1542184552.069901179]: Unable to parse joint value '0,4'[0m
+[31m[ERROR] [1542184552.069912954]: Unable to parse joint value ('0,4') for joint 'shoulder_2_joint' in group state 'right'[0m
+[0m[ INFO] [1542184552.069943814]: Loading robot model 'scara_cpe'...[0m
+[0m[ INFO] [1542184552.069965639]: No root/virtual joint specified in SRDF. Assuming fixed joint[0m
+[0m[ INFO] [1542184553.293445304]: TrajectoryExecution will use new action capability.[0m
+[0m[ INFO] [1542184553.293490978]: Ready to take MoveGroup commands for group scara_cpe_group.[0m
+Traceback (most recent call last):
+  File "/fs03/share/users/thomas.sevede/home/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script/moveit_test_poses_new.py", line 41, in <module>
+    scara.moveit_to_point(0.5,0.3)
+  File "/fs03/share/users/thomas.sevede/home/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script/moveit_test_poses_new.py", line 33, in moveit_to_point
+    self.set_joint_value_target(wpose, True)
+AttributeError: moveit_test_poses instance has no attribute 'set_joint_value_target'
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::lock_error> >'
+  what():  boost: mutex lock failed in pthread_mutex_lock: Invalid argument
+Abandon
+thomas.sevede@tpme05:~/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script$$ rosrun scara_cpe_apps moveit_test_poses_new.py
+[31m[ERROR] [1542184622.300354978]: Unable to parse joint value '-0,4'[0m
+[31m[ERROR] [1542184622.300381208]: Unable to parse joint value ('-0,4') for joint 'shoulder_1_joint' in group state 'right'[0m
+[31m[ERROR] [1542184622.300397116]: Unable to parse joint value '0,4'[0m
+[31m[ERROR] [1542184622.300407645]: Unable to parse joint value ('0,4') for joint 'shoulder_2_joint' in group state 'right'[0m
+[0m[ INFO] [1542184622.300464677]: Loading robot model 'scara_cpe'...[0m
+[0m[ INFO] [1542184622.300487908]: No root/virtual joint specified in SRDF. Assuming fixed joint[0m
+[31m[ERROR] [1542184622.427366442]: Unable to parse joint value '-0,4'[0m
+[31m[ERROR] [1542184622.427404853]: Unable to parse joint value ('-0,4') for joint 'shoulder_1_joint' in group state 'right'[0m
+[31m[ERROR] [1542184622.427425688]: Unable to parse joint value '0,4'[0m
+[31m[ERROR] [1542184622.427439449]: Unable to parse joint value ('0,4') for joint 'shoulder_2_joint' in group state 'right'[0m
+[0m[ INFO] [1542184622.427486828]: Loading robot model 'scara_cpe'...[0m
+[0m[ INFO] [1542184622.427512527]: No root/virtual joint specified in SRDF. Assuming fixed joint[0m
+[0m[ INFO] [1542184623.607162233]: TrajectoryExecution will use new action capability.[0m
+[0m[ INFO] [1542184623.607211760]: Ready to take MoveGroup commands for group scara_cpe_group.[0m
+Traceback (most recent call last):
+  File "/fs03/share/users/thomas.sevede/home/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script/moveit_test_poses_new.py", line 41, in <module>
+    scara.moveit_to_point(0.5,0.3)
+  File "/fs03/share/users/thomas.sevede/home/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script/moveit_test_poses_new.py", line 33, in moveit_to_point
+    set_joint_value_target(wpose, True)
+NameError: global name 'set_joint_value_target' is not defined
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::lock_error> >'
+  what():  boost: mutex lock failed in pthread_mutex_lock: Invalid argument
+Abandon
+thomas.sevede@tpme05:~/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script$$ s[Krosrun scara_cpe_apps moveit_test_poses_new.py
+[31m[ERROR] [1542184656.654943005]: Unable to parse joint value '-0,4'[0m
+[31m[ERROR] [1542184656.654967552]: Unable to parse joint value ('-0,4') for joint 'shoulder_1_joint' in group state 'right'[0m
+[31m[ERROR] [1542184656.654984885]: Unable to parse joint value '0,4'[0m
+[31m[ERROR] [1542184656.654994122]: Unable to parse joint value ('0,4') for joint 'shoulder_2_joint' in group state 'right'[0m
+[0m[ INFO] [1542184656.655049372]: Loading robot model 'scara_cpe'...[0m
+[0m[ INFO] [1542184656.655071363]: No root/virtual joint specified in SRDF. Assuming fixed joint[0m
+[31m[ERROR] [1542184656.774956808]: Unable to parse joint value '-0,4'[0m
+[31m[ERROR] [1542184656.774982147]: Unable to parse joint value ('-0,4') for joint 'shoulder_1_joint' in group state 'right'[0m
+[31m[ERROR] [1542184656.775002927]: Unable to parse joint value '0,4'[0m
+[31m[ERROR] [1542184656.775039420]: Unable to parse joint value ('0,4') for joint 'shoulder_2_joint' in group state 'right'[0m
+[0m[ INFO] [1542184656.775089406]: Loading robot model 'scara_cpe'...[0m
+[0m[ INFO] [1542184656.775109794]: No root/virtual joint specified in SRDF. Assuming fixed joint[0m
+[0m[ INFO] [1542184657.970743754]: TrajectoryExecution will use new action capability.[0m
+[0m[ INFO] [1542184657.970799229]: Ready to take MoveGroup commands for group scara_cpe_group.[0m
+Traceback (most recent call last):
+  File "/fs03/share/users/thomas.sevede/home/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script/moveit_test_poses_new.py", line 41, in <module>
+    scara.moveit_to_point(0.5,0.3)
+  File "/fs03/share/users/thomas.sevede/home/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script/moveit_test_poses_new.py", line 33, in moveit_to_point
+    self.group.set_joint_value_target(wpose, True)
+NameError: global name 'wpose' is not defined
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::lock_error> >'
+  what():  boost: mutex lock failed in pthread_mutex_lock: Invalid argument
+Abandon
+thomas.sevede@tpme05:~/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script$$ rosrun scara_cpe_apps moveit_test_poses_new.py
+[31m[ERROR] [1542184718.366611274]: Unable to parse joint value '-0,4'[0m
+[31m[ERROR] [1542184718.366652718]: Unable to parse joint value ('-0,4') for joint 'shoulder_1_joint' in group state 'right'[0m
+[31m[ERROR] [1542184718.366683936]: Unable to parse joint value '0,4'[0m
+[31m[ERROR] [1542184718.366703551]: Unable to parse joint value ('0,4') for joint 'shoulder_2_joint' in group state 'right'[0m
+[0m[ INFO] [1542184718.366777669]: Loading robot model 'scara_cpe'...[0m
+[0m[ INFO] [1542184718.366805806]: No root/virtual joint specified in SRDF. Assuming fixed joint[0m
+[31m[ERROR] [1542184718.486577727]: Unable to parse joint value '-0,4'[0m
+[31m[ERROR] [1542184718.486607304]: Unable to parse joint value ('-0,4') for joint 'shoulder_1_joint' in group state 'right'[0m
+[31m[ERROR] [1542184718.486626200]: Unable to parse joint value '0,4'[0m
+[31m[ERROR] [1542184718.486638265]: Unable to parse joint value ('0,4') for joint 'shoulder_2_joint' in group state 'right'[0m
+[0m[ INFO] [1542184718.486675146]: Loading robot model 'scara_cpe'...[0m
+[0m[ INFO] [1542184718.486688623]: No root/virtual joint specified in SRDF. Assuming fixed joint[0m
+[0m[ INFO] [1542184719.669274843]: TrajectoryExecution will use new action capability.[0m
+[0m[ INFO] [1542184719.669328975]: Ready to take MoveGroup commands for group scara_cpe_group.[0m
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::lock_error> >'
+  what():  boost: mutex lock failed in pthread_mutex_lock: Invalid argument
+Abandon
+thomas.sevede@tpme05:~/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script$$ rosrun scara_cpe_apps moveit_test_poses_new.py
+[31m[ERROR] [1542184762.480944886]: Unable to parse joint value '-0,4'[0m
+[31m[ERROR] [1542184762.480979254]: Unable to parse joint value ('-0,4') for joint 'shoulder_1_joint' in group state 'right'[0m
+[31m[ERROR] [1542184762.480995796]: Unable to parse joint value '0,4'[0m
+[31m[ERROR] [1542184762.481011221]: Unable to parse joint value ('0,4') for joint 'shoulder_2_joint' in group state 'right'[0m
+[0m[ INFO] [1542184762.481067831]: Loading robot model 'scara_cpe'...[0m
+[0m[ INFO] [1542184762.481098756]: No root/virtual joint specified in SRDF. Assuming fixed joint[0m
+[31m[ERROR] [1542184762.596864448]: Unable to parse joint value '-0,4'[0m
+[31m[ERROR] [1542184762.596889272]: Unable to parse joint value ('-0,4') for joint 'shoulder_1_joint' in group state 'right'[0m
+[31m[ERROR] [1542184762.596905397]: Unable to parse joint value '0,4'[0m
+[31m[ERROR] [1542184762.596916120]: Unable to parse joint value ('0,4') for joint 'shoulder_2_joint' in group state 'right'[0m
+[0m[ INFO] [1542184762.596949830]: Loading robot model 'scara_cpe'...[0m
+[0m[ INFO] [1542184762.596961916]: No root/virtual joint specified in SRDF. Assuming fixed joint[0m
+[0m[ INFO] [1542184763.847354285]: TrajectoryExecution will use new action capability.[0m
+[0m[ INFO] [1542184763.847408555]: Ready to take MoveGroup commands for group scara_cpe_group.[0m
+^Cterminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::lock_error> >'
+  what():  boost: mutex lock failed in pthread_mutex_lock: Invalid argument
+Abandon
+thomas.sevede@tpme05:~/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script$$ rosrun scara_cpe_apps moveit_test_poses_new.py
+[31m[ERROR] [1542184798.594898106]: Unable to parse joint value '-0,4'[0m
+[31m[ERROR] [1542184798.594924978]: Unable to parse joint value ('-0,4') for joint 'shoulder_1_joint' in group state 'right'[0m
+[31m[ERROR] [1542184798.594942951]: Unable to parse joint value '0,4'[0m
+[31m[ERROR] [1542184798.594952635]: Unable to parse joint value ('0,4') for joint 'shoulder_2_joint' in group state 'right'[0m
+[0m[ INFO] [1542184798.594997849]: Loading robot model 'scara_cpe'...[0m
+[0m[ INFO] [1542184798.595016470]: No root/virtual joint specified in SRDF. Assuming fixed joint[0m
+[31m[ERROR] [1542184798.723294008]: Unable to parse joint value '-0,4'[0m
+[31m[ERROR] [1542184798.723320760]: Unable to parse joint value ('-0,4') for joint 'shoulder_1_joint' in group state 'right'[0m
+[31m[ERROR] [1542184798.723339060]: Unable to parse joint value '0,4'[0m
+[31m[ERROR] [1542184798.723355975]: Unable to parse joint value ('0,4') for joint 'shoulder_2_joint' in group state 'right'[0m
+[0m[ INFO] [1542184798.723405487]: Loading robot model 'scara_cpe'...[0m
+[0m[ INFO] [1542184798.723429194]: No root/virtual joint specified in SRDF. Assuming fixed joint[0m
+[0m[ INFO] [1542184799.844348764]: TrajectoryExecution will use new action capability.[0m
+[0m[ INFO] [1542184799.844395708]: Ready to take MoveGroup commands for group scara_cpe_group.[0m
+^Cterminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::lock_error> >'
+  what():  boost: mutex lock failed in pthread_mutex_lock: Invalid argument
+Abandon
+thomas.sevede@tpme05:~/catkin_ws/src/scara_cpe_4students-master/scara_cpe_apps/script$$ rosrun scara_cpe_apps moveit_test_poses_new.py
+[31m[ERROR] [1542184814.591235122]: Unable to parse joint value '-0,4'[0m
+[31m[ERROR] [1542184814.591262014]: Unable to parse joint value ('-0,4') for joint 'shoulder_1_joint' in group state 'right'[0m
+[31m[ERROR] [1542184814.591278836]: Unable to parse joint value '0,4'[0m
+[31m[ERROR] [1542184814.591288076]: Unable to parse joint value ('0,4') for joint 'shoulder_2_joint' in group state 'right'[0m
+[0m[ INFO] [1542184814.591333943]: Loading robot model 'scara_cpe'...[0m
+[0m[ INFO] [1542184814.591355408]: No root/virtual joint specified in SRDF. Assuming fixed joint[0m
+[31m[ERROR] [1542184814.717659083]: Unable to parse joint value '-0,4'[0m
+[31m[ERROR] [1542184814.717685015]: Unable to parse joint value ('-0,4') for joint 'shoulder_1_joint' in group state 'right'[0m
+[31m[ERROR] [1542184814.717701345]: Unable to parse joint value '0,4'[0m
+[31m[ERROR] [1542184814.717712509]: Unable to parse joint value ('0,4') for joint 'shoulder_2_joint' in group state 'right'[0m
+[0m[ IN

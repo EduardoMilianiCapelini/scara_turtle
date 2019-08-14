@@ -2,4 +2,4 @@
 source_root_dir = "/home/tp/catkin_ws/src"
 whitelisted_packages = "".split(';') if "" != "" else []
 blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/opt/ros/kinetic".split(';') if "/opt/ros/kinetic" != "" else []
+underlay_workspaces = "/home/tp/URTF_ws/devel;/home/tp/catkin_ws_scararaiz/devel;/home/tp/catkin_sws_scararaiz2/devel;/opt/ros/kinetic".split(';') if "/home/tp/URTF_ws/devel;/home/tp/catkin_ws_scararaiz/devel;/home/tp/catkin_sws_scararaiz2/devel;/opt/ros/kinetic" != "" else []

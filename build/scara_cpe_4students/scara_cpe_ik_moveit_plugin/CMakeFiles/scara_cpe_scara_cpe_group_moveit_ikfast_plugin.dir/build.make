@@ -107,6 +107,7 @@ scara_cpe_scara_cpe_group_moveit_ikfast_plugin_EXTERNAL_OBJECTS =
 /home/tp/catkin_ws/devel/lib/libscara_cpe_scara_cpe_group_moveit_ikfast_plugin.so: /opt/ros/kinetic/lib/libmoveit_profiler.so
 /home/tp/catkin_ws/devel/lib/libscara_cpe_scara_cpe_group_moveit_ikfast_plugin.so: /opt/ros/kinetic/lib/libmoveit_trajectory_processing.so
 /home/tp/catkin_ws/devel/lib/libscara_cpe_scara_cpe_group_moveit_ikfast_plugin.so: /opt/ros/kinetic/lib/libmoveit_distance_field.so
+/home/tp/catkin_ws/devel/lib/libscara_cpe_scara_cpe_group_moveit_ikfast_plugin.so: /opt/ros/kinetic/lib/libmoveit_collision_distance_field.so
 /home/tp/catkin_ws/devel/lib/libscara_cpe_scara_cpe_group_moveit_ikfast_plugin.so: /opt/ros/kinetic/lib/libmoveit_kinematics_metrics.so
 /home/tp/catkin_ws/devel/lib/libscara_cpe_scara_cpe_group_moveit_ikfast_plugin.so: /opt/ros/kinetic/lib/libmoveit_dynamics_solver.so
 /home/tp/catkin_ws/devel/lib/libscara_cpe_scara_cpe_group_moveit_ikfast_plugin.so: /opt/ros/kinetic/lib/libmoveit_utils.so

@@ -13,7 +13,16 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   genmsg 
   actionlib_msgs
+  sensor_msgs
+  cv_bridge
 )
+
+find_package(OpenCV 2 REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+#target_link_libraries(cv_bridge ${OpenCV_LIBRARIES})
+#add_library(${OpenCV_LIBRARIES})
+#list(REMOVE_DUPLICATES <opencv_videostab>)
+
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)

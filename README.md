@@ -1,4 +1,4 @@
-###TURTLE SCARA V2.0
+### TURTLE SCARA V2.0
 
 Second session work for CPE Lyon Engineering School.
 The project is mainly composed of two robots, a mobile base robot with an arm and a camera robot that posts images to the topic camera1/image_raw

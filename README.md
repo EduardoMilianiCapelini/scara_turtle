@@ -19,3 +19,9 @@ The project is mainly composed of two worlds two robots, a mobile base robot wit
 
 	$ roslaunch scara_cpe_gazebo gazebo_motor_controller.launch
 	$ python aller_bras.py
+	
+--> See the images taken from camera_robot:
+
+	$ rosrun image_view image_view image:=camera1/image_raw
+
+WIP: A process of circles detection is beeing developed in scara_cpe_kinemaics/script/hough_circles_python.py 

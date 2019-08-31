@@ -3,7 +3,7 @@
 -------------------------------
 
 Second session work for CPE Lyon Engineering School.
-The project is mainly composed of two worlds two robots, a mobile base robot with an arm and a camera robot that posts images to the topic camera1/image_raw
+The project is mainly composed of two robots, a mobile base robot with an arm and a camera robot that posts images to the topic camera1/image_raw
 
 --> Launch turtle_scara (scara_cpe.xacro + camera_robot.xacro + my_world.world) :
 

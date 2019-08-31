@@ -37,8 +37,7 @@ class Joint:
 def main():
             arm = Joint('f_arm')
 	    
-            arm.move_joint([1.5,1.5])
-            #arm.move_joint([6.28,3.14,6.28])
+            arm.move_joint([0,0])
 
 
 if __name__ == '__main__':

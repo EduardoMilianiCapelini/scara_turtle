@@ -25,11 +25,8 @@ class image_converter:
     except CvBridgeError as e:
       print(e)
 
-    (rows,cols,channels) = cv_image.shape
-    if cols > 60 and rows > 60 :
-      cv2.circle(cv_image, (50,50), 10, 255)
     if LooseVersion(cv2.__version__).version[0] == 2:
-      print('TESTIIINGGG')
+      print('DEBUG')
       circles = cv2.HoughCircles(cv_image,cv2.HOUGH_GRADIENT,1.20,100,param1=50,param2=30,minRadius=0,maxRadius=300)
       circles = np.uint16(np.around(circles))
       for i in circles[0,:]:

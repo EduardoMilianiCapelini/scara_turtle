@@ -22,4 +22,6 @@ The project is mainly composed of two robots, a mobile base robot with an arm an
 
 	$ rosrun image_view image_view image:=camera1/image_raw
 
-WIP: A process of circles detection is beeing developed in scara_cpe_kinemaics/script/hough_circles_python.py 
+### Enjoy a pleasant world
+
+![rdm](https://user-images.githubusercontent.com/53542144/64062889-48c7f200-cbf5-11e9-9557-51234953434c.png)
